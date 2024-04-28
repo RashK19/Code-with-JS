@@ -6,14 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="day1.html" method="post">
-        <label for="Name">Name</label>
-        <input type="text" name="name">
-        <button>Submit</button>
-
-    </form>
     <script>
-        String a= 
+        function show()
+        {
+            let a= document.getElementById('name').value;
+            let b= document.getElementById('age').value;
+            alert("hello "+a+"your age is "+b);
+        }
+        
     </script>
+    
+        <label>Name</label>
+        <input type="text" Id="name">
+        <label>Age</label>
+        <input type="text" Id="age">
+        <button onclick="show()">Submit</button>
+
+    
 </body>
 </html>
